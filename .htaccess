@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^$ index.php?page=home&id=$1 [L]
+RewriteRule ^berita-(.*)\.html$ index.php?page=detailberita&id=$1 [L]
+RewriteRule ^program\.html$ index.php?page=program&id=$1 [L]
+RewriteRule ^berita\.html$ index.php?page=berita&id=$1 [L]
+
+Options All -Indexes
+</IfModule>
